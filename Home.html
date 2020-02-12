@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+  <title>Gift Card </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+	.img-size{
+	height:280px;
+	}
+	#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+ .carousel-inner img {
+      width: 100%;
+      height: 50%;
+  }
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  heigth:50%;
+  width: 100%;
+  background-color: lightGray;
+  color: Light;
+  text-align: center;
+}
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+	.card-width{
+	width: 280px;
+	}
+	.navbardef {
+    background-color: #228FD1;
+    border-color: #E7E7E7;
+}
+.height{
+height:190px;
+width:900px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+margin-top:1%;
+margin-bottom:0%
+}
+.mar{
+margin-top:1%;
+}
+ 
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+  
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbeTi64Gcsw3ACzVTXP0e_VwOHIQv74K4p-ArIOTHzrpjgCBd3" class="rounded-circle" alt="Cinque Terre" width="90" height="90"> 
+  </nav>
+        
+
+	<nav class="navbar navbar-expand-md navbardef ">
+  <a class="navbar-brand text-White" href="#">Menu</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link text-White" href="Home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Placeorder.html">Place Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Vieworder.html">View Order</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link text-white" href="Contactus.html">Contact Us</a>
+      </li>
+      
+    </ul>
+	</div>
+	</nav>
+	<div class="d-flex" >
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+     
+      <div class="list-group list-group-flush">
+       
+		<div class="list-group list-group-flush">
+		<ul class="list-group" style="max-height: 200px;overflow: auto;">
+        <li class="list-group-item" ng-repeat="i in filters">
+           <a href="Home.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        </li>
+    </ul>
+	<ul class="list-group" style="max-height: 200px;overflow: auto;">
+        <li class="list-group-item" ng-repeat="i in filters">
+          <a href="Placeorder.html" class="list-group-item list-group-item-action bg-light">Place Order</a>
+        </li>
+    </ul></div>
+        
+        <div class="list-group list-group-flush">
+		<ul class="list-group" style="max-height: 200px;overflow: auto;">
+        <li class="list-group-item" ng-repeat="i in filters">
+           <a href="Vieworder.html" class="list-group-item list-group-item-action bg-light">View Order</a>
+        </li>
+    </ul>
+	<ul class="list-group" style="max-height: 200px;overflow: auto;">
+        <li class="list-group-item" ng-repeat="i in filters">
+          <a href="Contactus.html" class="list-group-item list-group-item-action bg-light">Contact Us</a>
+        </li>
+    </ul></div>
+      </div>
+    </div>
+ <div id="content">
+
+            
+      <div class="container mt-3 mx-5 mr--9 justify-content-center">
+ 
+  <div id="demo" class="carousel slide " data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1514207994142-98522b5a2b23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" 
+alt="Los Angeles" width="30px" height="30px">
+       
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/a3/e6/36/a3e63645f47fd70102086f41aa93ec79.jpg" 
+alt="Chicago" width="30" height="30">
+         
+    </div>
+    <div class="carousel-item">
+      <img src="https://static.vecteezy.com/system/resources/previews/000/093/209/non_2x/best-wishes-greeting-card-vector.jpg" 
+alt="New York" width="30" height="30">
+        
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+    <h1>Welcome...</h1>      
+    <p> A lot of people buy gift cards, especially around holiday seasons and for special occasions. That's because gift cards are a really convenient and easy gift, especially for people who are hard to shop for, or who you don't know very well. </p>
+ 
+      
+</div>	<div class="container justify-content-center">
+            <a href="Placeorder.html" >
+  <button type="button" class="btn navbardef height text-White">Place order</button>   </a>
+  
+          
+</div>
+          </div>
+    </div>
+ </div>
+		<div class="footer text-White navbardef">
+  <p>© 2020. All Rights Reserved.</p>
+  
+
+</div>
+</body>
+</html>
+	
+	
